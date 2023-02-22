@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Flicks</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Flicks</h1>
+    <ul id="dataList" class="list-group">
+      <!-- List of data will be dynamically generated here -->
+    </ul>
+    <form id="addForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <input type="text" class="form-control" id="description" name="description" required>
+      </div>
+      <div class="form-group">
+        <label for="tags">Tags:</label>
+        <input type="text" class="form-control" id="tags" name="tags" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Image file:</label>
+        <input type="file" class="form-control-file" id="image" name="image" accept="image/*" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create Flick</button>
+      <button type="button" class="btn btn-secondary" onclick="resetForm()">Cancel</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
